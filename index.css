@@ -1,0 +1,17 @@
+
+.inner-img-div {
+    position: absolute;  
+}
+
+.dog-info-general {
+   position: relative;  
+   display: flex;
+    flex-direction: column; 
+    justify-items: space-between;
+   align-items: space-between; 
+}
+
+.dog-info {
+  color: blue;
+  font-size: 2rem;
+}
