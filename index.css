@@ -1,17 +1,51 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
 
-.inner-img-div {
-    position: absolute;  
+html,
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
+.container, 
 .dog-info-general {
-   position: relative;  
-   display: flex;
-    flex-direction: column; 
-    justify-items: space-between;
-   align-items: space-between; 
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
 }
+
+
+/*  .inner-img-div {
+
+    width: 233px;
+    height: 116.443px;
+    flex-shrink: 0;
+} 
+ */
+.inner-img-div img {
+
+  position: absolute;
+
+}
+
 
 .dog-info {
   color: blue;
   font-size: 2rem;
 }
+.badge-like {
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+
+.badge-like img {
+  width: 455px;
+  transform: rotate(-30deg);
+  position: fixed;
+
+  flex-shrink: 0;
+}
+
