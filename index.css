@@ -9,8 +9,29 @@ body {
   font-family: 'Source Sans 3', sans-serif;
 }
 
+
+
 .container{
-   margin: 0 auto;
+  width: 1068px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.header-logo, 
+.footer-icons {
+  display: flex;
+}
+
+.header-logo {
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.footer-icons {
+  justify-content: space-evenly;
 }
 
  .outsider-div {
@@ -43,6 +64,6 @@ body {
 }
 
 .cross-heart {
-  position: relative;
+/*   position: relative; */
 
 }
