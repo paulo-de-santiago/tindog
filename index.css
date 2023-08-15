@@ -102,3 +102,41 @@ h3 {
   }
 
 /* Footer */
+
+.no-size,
+.like-size {
+
+  padding: 56px;
+  border-radius: 100%;
+  margin-left: 15px;
+  width: 10rem;
+}
+
+.no,
+.like {
+/*   display: inline-block; */
+  /* width: 455px; */
+  margin: 0 4px;
+}
+
+.no {
+  border: 2px #da1919 solid ;  
+  border-radius: 50%;
+  background-color:  #da1919;
+/*   fill: #2c3928;
+  filter: drop-shadow(0px 10px 20px #000); */
+}
+
+.like {
+  border: 2px #4d8b49 solid ;  
+  border-radius: 50%;
+  background-color: #44c63b;
+}
+
+.no:hover {
+  background-color:  #c44545;
+} 
+
+.like:hover{
+  background-color: #4d8b49;
+}
