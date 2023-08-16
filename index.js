@@ -26,6 +26,10 @@ function render() {
   document.getElementById("outsider-div").innerHTML = dog.getNewDogHtml();
 }
 
-let dog = new Dog(dogsData[0]);
+function getNEwDog() {
+  return new Dog(dogsData[0]);
+}
+
+let dog = getNEwDog();
 console.log(dog);
 render();
