@@ -7,9 +7,10 @@ import Dog from "./Dog.js";
 document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
-    render();
-  } else if (element.target.dataset.like) {
-    render();
+    console.log("No");
+  }
+  if (element.target.dataset.like) {
+    console.log("yes");
   }
 });
 
@@ -24,4 +25,5 @@ function render() {
 }
 
 let dog = new Dog(data[0]);
+console.log(dog);
 render();

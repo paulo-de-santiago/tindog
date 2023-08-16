@@ -26,12 +26,12 @@ class Dog {
             <footer class="footer-icons" id="footer-icons">
               <div class=div-footer-icons id="div-footer-icons">
 
-                  <button class="no" id="no" data-no="${name}">
-                    <img src="./images/icon-cross.png" alt="No" class="no-size" id="no-size"/>
+                  <button class="no" id="no" >
+                    <img src="./images/icon-cross.png" alt="No" class="no-size" id="no-size" data-no="${name}"/>
                   </button>
 
-                  <button class="like" id="like" data-like="${name}">
-                    <img src="./images/icon-heart.png" alt="Like" class="like-size" id="like-size"/>
+                  <button class="like" id="like">
+                    <img src="./images/icon-heart.png" alt="Like" class="like-size" id="like-size" data-like="${name}"/>
                   </button>  
 
               </div>
