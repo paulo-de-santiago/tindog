@@ -22,8 +22,8 @@ let arrayIndex = ["0", "1", "2"];
 
 function getNEwDog() {
   let nextDog = arrayIndex.shift();
-
-  return nextDog.length > 0 ? new Dog(dogsData[nextDog]) : {};
+  console.log(typeof nextDog);
+  return arrayIndex.length > 0 ? new Dog(dogsData[nextDog]) : {};
 }
 
 /* function buttonNo(data) {
