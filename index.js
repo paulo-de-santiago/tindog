@@ -7,7 +7,6 @@ import Dog from "./Dog.js";
 document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
-    getNewDog();
     buttonOption(element.target.dataset.no);
 
     console.log(element.target.dataset.no);
@@ -24,8 +23,11 @@ let dog = new Dog(dogsData[counting]);
 
 function buttonOption(option) {
   if (option === "no") {
+    dog.setStatus(false);
+
     console.log("no");
   } else if (option === "like") {
+    dog.setStatus(true);
     console.log("like");
   }
 }
