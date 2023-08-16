@@ -18,7 +18,7 @@ class Dog {
               <img src="${avatar}" alt="" />
 
                 <div class="dog-info-general">
-                    <div class="badge-like" id="badge-like">
+                    <div class="badge" id="badge">
                       <img src="./images/badge-like.png" alt="<!--  -->" class="badge-like-img" id="badge-like-img"/>
                     </div>
                     <div class="dog-info" id="dog-info">
