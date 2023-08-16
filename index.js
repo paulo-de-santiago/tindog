@@ -7,6 +7,7 @@ import Dog from "./Dog.js";
 document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
+    getNEwDog();
     /* getNEwDog(element.target.dataset.no); */
     console.log(element.target.dataset.no);
     console.log("No");
@@ -17,12 +18,12 @@ document.addEventListener("click", function (element) {
   }
 });
 
-let arrayNames = ["Rex", "Bella", "Teddy"];
+let arrayIndex = ["0", "1", "2"];
 
 function getNEwDog() {
-  if (dogsData.length > 0) {
-    return new Dog(dogsData[0]);
-  }
+  let nextDog = arrayIndex.shift();
+
+  return nextDog.length > 0 ? new Dog(dogsData[nextDog]) : {};
 }
 
 /* function buttonNo(data) {
