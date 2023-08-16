@@ -7,25 +7,32 @@ import Dog from "./Dog.js";
 document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
-    getNEwDog();
+    getNewDog();
+    buttonOption(element.target.dataset.no);
 
     console.log(element.target.dataset.no);
-    console.log("No");
   }
   if (element.target.dataset.like) {
+    getNewDog();
+    buttonOption(element.target.dataset.like);
     console.log(element.target.dataset.like);
-    console.log("yes");
   }
 });
 
 let counting = 0;
-
 let dog = new Dog(dogsData[counting]);
 
-function getNEwDog() {
+function buttonOption(option) {
+  if (option === "no") {
+    console.log("no");
+  } else if (option === "like") {
+    console.log("like");
+  }
+}
+function getNewDog() {
   if (counting >= 2) {
     counting = 0;
-    dog = Dog(dogsData[counting]);
+    dog = new Dog(dogsData[counting]);
   } else {
     counting += 1;
     dog = new Dog(dogsData[counting]);

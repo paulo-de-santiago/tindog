@@ -5,6 +5,11 @@ class Dog {
     Object.assign(this, data);
   }
 
+  setStatus(option) {
+    this.hasBeenSwiped = true;
+    this.hasBeenLiked = option;
+  }
+
   getNewDogHtml() {
     // @ts-ignore
     const { name, avatar, age, bio } = this;
@@ -27,11 +32,11 @@ class Dog {
               <div class=div-footer-icons id="div-footer-icons">
 
                   <button class="no" id="no" >
-                    <img src="./images/icon-cross.png" alt="No" class="no-size" id="no-size" data-no="${name}"/>
+                    <img src="./images/icon-cross.png" alt="No" class="no-size" id="no-size" data-no="no"/>
                   </button>
 
                   <button class="like" id="like">
-                    <img src="./images/icon-heart.png" alt="Like" class="like-size" id="like-size" data-like="${name}"/>
+                    <img src="./images/icon-heart.png" alt="Like" class="like-size" id="like-size" data-like="like"/>
                   </button>  
 
               </div>
