@@ -7,6 +7,7 @@ import Dog from "./Dog.js";
 document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
+    /* getNEwDog(element.target.dataset.no); */
     console.log(element.target.dataset.no);
     console.log("No");
   }
@@ -15,6 +16,14 @@ document.addEventListener("click", function (element) {
     console.log("yes");
   }
 });
+
+let arrayNames = ["Rex", "Bella", "Teddy"];
+
+function getNEwDog() {
+  if (dogsData.length > 0) {
+    return new Dog(dogsData[0]);
+  }
+}
 
 /* function buttonNo(data) {
   document.getElementById("no");
@@ -26,10 +35,6 @@ function render() {
   document.getElementById("outsider-div").innerHTML = dog.getNewDogHtml();
 }
 
-function getNEwDog() {
-  return new Dog(dogsData[0]);
-}
-
-let dog = getNEwDog();
-console.log(dog);
+let dog = getNEwDog(); /* getNEwDog(); */
+/* console.log(dog); */
 render();
