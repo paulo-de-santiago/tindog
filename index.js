@@ -8,7 +8,7 @@ document.addEventListener("click", function (element) {
   // @ts-ignore
   if (element.target.dataset.no) {
     getNEwDog();
-    /* getNEwDog(element.target.dataset.no); */
+
     console.log(element.target.dataset.no);
     console.log("No");
   }
@@ -18,24 +18,25 @@ document.addEventListener("click", function (element) {
   }
 });
 
-let arrayIndex = ["0", "1", "2"];
+let counting = 0;
+
+let dog = new Dog(dogsData[counting]);
 
 function getNEwDog() {
-  let nextDog = arrayIndex.shift();
-  console.log(typeof nextDog);
-  return arrayIndex.length > 0 ? new Dog(dogsData[nextDog]) : {};
+  if (counting >= 2) {
+    counting = 0;
+    dog = Dog(dogsData[counting]);
+  } else {
+    counting += 1;
+    dog = new Dog(dogsData[counting]);
+  }
+  render();
+  console.log(counting);
 }
 
-/* function buttonNo(data) {
-  document.getElementById("no");
-  console.log(data);
-}
- */
 function render() {
   // @ts-ignore
   document.getElementById("outsider-div").innerHTML = dog.getNewDogHtml();
 }
 
-let dog = getNEwDog(); /* getNEwDog(); */
-/* console.log(dog); */
 render();
