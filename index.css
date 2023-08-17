@@ -126,23 +126,32 @@ h3 {
 }
 
 .nope {
-  border: 2px #da1919 solid ;  
+  border: 1px #f8efef solid ;  
   border-radius: 50%;
-  background-color:  #da1919;
-/*   fill: #2c3928;
-  filter: drop-shadow(0px 10px 20px #000); */
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+
 }
 
 .like {
-  border: 2px #4d8b49 solid ;  
+  border: 2px #f6fff6 solid ;  
   border-radius: 50%;
-  background-color: #44c63b;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 }
 
 .nope:hover {
-  background-color:  #c44545;
+    background-image: linear-gradient(
+    to right,
+    #ce9898,
+    #edabab 50%
+  );
+
 } 
 
 .like:hover{
-  background-color: #4d8b49;
+ /*  background-color: #4d8b49; */
+ background-image: linear-gradient(
+    to right, #a1c4fd,
+    #54b3d6  50%
+  );
+
 }
