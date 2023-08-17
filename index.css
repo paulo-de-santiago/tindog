@@ -55,6 +55,14 @@ body {
   font-size: 2rem;
 }
 
+.badge-like-img {
+  display: none; 
+}
+
+.badge-nope-img {
+  display: none;
+}
+
 .badge {
   margin-top: 100px;
   margin-left: 30px;
