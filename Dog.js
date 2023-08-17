@@ -10,6 +10,9 @@ class Dog {
     this.hasBeenLiked = option;
   }
 
+  /* var image = document.getElementsByClassName("image2");
+image.src = "image1.jpg" */
+
   getNewDogHtml() {
     // @ts-ignore
     const { name, avatar, age, bio } = this;
@@ -19,7 +22,7 @@ class Dog {
 
                 <div class="dog-info-general">
                     <div class="badge" id="badge">
-                      <img src="./images/badge-like.png" alt="<!--  -->" class="badge-like-img" id="badge-like-img"/>
+                    /*   <img src="./images/badge-like.png" alt="<!--  -->" class="badge-like-img" id="badge-like-img"/> */
                     </div>
                     <div class="dog-info" id="dog-info">
                       <h3>${name}, ${age}</h3>
@@ -28,19 +31,7 @@ class Dog {
                 </div>
             </div>
 
-            <footer class="footer-icons" id="footer-icons">
-              <div class=div-footer-icons id="div-footer-icons">
-
-                  <button class="no" id="no" >
-                    <img src="./images/icon-cross.png" alt="No" class="no-size" id="no-size" data-no="no"/>
-                  </button>
-
-                  <button class="like" id="like">
-                    <img src="./images/icon-heart.png" alt="Like" class="like-size" id="like-size" data-like="like"/>
-                  </button>  
-
-              </div>
-            </footer>    
+        
             `;
   }
 }
