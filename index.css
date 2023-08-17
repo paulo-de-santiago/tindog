@@ -55,13 +55,11 @@ body {
   font-size: 2rem;
 }
 
+.badge-nope-img,
 .badge-like-img {
   display: none; 
 }
 
-.badge-nope-img {
-  display: none;
-}
 
 .badge {
   margin-top: 100px;
@@ -127,7 +125,7 @@ h3 {
   margin: 0 4px;
 }
 
-.no {
+.nope {
   border: 2px #da1919 solid ;  
   border-radius: 50%;
   background-color:  #da1919;

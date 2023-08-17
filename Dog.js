@@ -22,8 +22,8 @@ image.src = "image1.jpg" */
 
                 <div class="dog-info-general">
                     <div class="badge" id="badge">
+                      <img src="./images/badge-nope.png" alt="" class="badge-nope-img" id="badge-nope-img"/> 
                       <img src="./images/badge-like.png" alt="" class="badge-like-img" id="badge-like-img"/> 
-                      <img src="./images/badge-nope.png" alt="" class="badge-like-img" id="badge-like-img"/> 
                     </div>
                     <div class="dog-info" id="dog-info">
                       <h3>${name}, ${age}</h3>
