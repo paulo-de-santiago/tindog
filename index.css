@@ -109,7 +109,7 @@ h3 {
 
 /* Footer */
 
-.no-size,
+.nope-size,
 .like-size {
 
   padding: 56px;
@@ -118,7 +118,7 @@ h3 {
   width: 10rem;
 }
 
-.no,
+.nope,
 .like {
 /*   display: inline-block; */
   /* width: 455px; */
@@ -139,7 +139,7 @@ h3 {
   background-color: #44c63b;
 }
 
-.no:hover {
+.nope:hover {
   background-color:  #c44545;
 } 
 
