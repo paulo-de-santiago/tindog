@@ -12,7 +12,6 @@ document.addEventListener("click", function (element) {
     console.log(element.target.dataset.nope);
   }
   if (element.target.dataset.like) {
-    getNewDog();
     buttonOption(element.target.dataset.like);
     console.log(element.target.dataset.like);
   }
@@ -33,8 +32,8 @@ function buttonOption(option) {
     console.log("nope");
   } else if (option === "like") {
     btnLike.display = "inline";
-    dog.setStatus(true);
     setTimeout(getNewDog, 2000);
+    dog.setStatus(true);
     console.log("like");
   }
   /*   getNewDog(); */
