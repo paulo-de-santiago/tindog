@@ -48,7 +48,7 @@ function getNewDog() {
   }
   dog = new Dog(dogsData[counting]);
   render();
-  console.log(counting);
+  /*  console.log(counting); */
 }
 
 function render() {
