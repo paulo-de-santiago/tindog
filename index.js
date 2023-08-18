@@ -4,23 +4,18 @@
 import dogsData from "./data.js";
 import Dog from "./Dog.js";
 
-let remove = document.addEventListener(
-  "click",
-  function (element) {
-    // @ts-ignore
-    if (element.target.dataset.nope) {
-      buttonOption(element.target.dataset.nope);
-    }
-    if (element.target.dataset.like) {
-      buttonOption(element.target.dataset.like);
-    }
-  },
-  false
-);
+document.addEventListener("click", function (element) {
+  // @ts-ignore
+  if (element.target.dataset.nope) {
+    buttonOption(element.target.dataset.nope);
+  }
+  if (element.target.dataset.like) {
+    buttonOption(element.target.dataset.like);
+  }
+});
 
 let counting = 0;
 let dog = new Dog(dogsData[counting]);
-let isWaiting = false;
 
 function buttonOption(option) {
   let btnImgNope = document.getElementById("badge-nope-img");
@@ -28,7 +23,6 @@ function buttonOption(option) {
   let btnImgLike = document.getElementById("badge-like-img");
 
   /* To Do */
-  let button = document.getElementsByClassName("button");
 
   if (option === "nope") {
     btnImgNope.style.display = "inline";
@@ -36,11 +30,14 @@ function buttonOption(option) {
     /* To Do */
     /* button.type.button = "disabled"; */
     setTimeout(getNewDog, 2000);
+    /*   document.getElementsByClassName("button").type.button = "disabled"; */
   } else if (option === "like") {
     btnImgLike.style.display = "inline";
     setTimeout(getNewDog, 2000);
     dog.setStatus(true);
   }
+
+  /*  document.getElementsByClassName("button").type.button = "disabled"; */
 }
 
 function getNewDog() {
