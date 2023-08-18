@@ -139,14 +139,24 @@ h3 {
   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 }
 
+.nope,
+.like:hover {
+  cursor: pointer;
+}
 .nope:hover {
     background-image: linear-gradient(
     to right,
     #ce9898,
     #edabab 50%
   );
-
 } 
+
+.nope:active {
+  background-image: linear-gradient(135deg, #e591ab 40%, #fc894d);
+  border: none;
+  font-weight: bold;
+  color: white;
+}
 
 .like:hover{
  /*  background-color: #4d8b49; */
@@ -154,5 +164,12 @@ h3 {
     to right, #a1c4fd,
     #54b3d6  50%
   );
-
 }
+
+.like:active {
+  background-image: linear-gradient(135deg, #92b7e6 40%, #4d99fc);
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
