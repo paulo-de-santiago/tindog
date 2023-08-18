@@ -4,34 +4,40 @@
 import dogsData from "./data.js";
 import Dog from "./Dog.js";
 
-document.addEventListener("click", function (element) {
-  // @ts-ignore
-  if (element.target.dataset.nope) {
-    buttonOption(element.target.dataset.nope);
-  }
-  if (element.target.dataset.like) {
-    buttonOption(element.target.dataset.like);
-  }
-});
+let remove = document.addEventListener(
+  "click",
+  function (element) {
+    // @ts-ignore
+    if (element.target.dataset.nope) {
+      buttonOption(element.target.dataset.nope);
+    }
+    if (element.target.dataset.like) {
+      buttonOption(element.target.dataset.like);
+    }
+  },
+  false
+);
 
 let counting = 0;
 let dog = new Dog(dogsData[counting]);
+let isWaiting = false;
 
 function buttonOption(option) {
   let btnImgNope = document.getElementById("badge-nope-img");
 
   let btnImgLike = document.getElementById("badge-like-img");
 
+  /* To Do */
   let button = document.getElementsByClassName("button");
+
   if (option === "nope") {
     btnImgNope.style.display = "inline";
-    button.disabled = true; // disable button
-    setTimeout(getNewDog, 1500);
     dog.setStatus(false);
+    /* To Do */
+    /* button.type.button = "disabled"; */
+    setTimeout(getNewDog, 2000);
   } else if (option === "like") {
     btnImgLike.style.display = "inline";
-    button.disabled = true;
-    btnImgLike.disabled = true;
     setTimeout(getNewDog, 2000);
     dog.setStatus(true);
   }
