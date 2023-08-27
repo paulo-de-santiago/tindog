@@ -17,30 +17,29 @@ document.addEventListener("click", function (element) {
 let counting = 0;
 let dog = new Dog(dogsData[counting]);
 
+let btnDisabled = false;
 function buttonOption(option) {
   let btnImgNope = document.getElementById("badge-nope-img");
 
   let btnImgLike = document.getElementById("badge-like-img");
 
   /* To Do */
-
-  if (option === "nope") {
-    btnImgNope.style.display = "inline";
-    dog.setStatus(false);
-    /* To Do */
-    /* button.type.button = "disabled"; */
-    setTimeout(getNewDog, 2000);
-    /*   document.getElementsByClassName("button").type.button = "disabled"; */
-  } else if (option === "like") {
-    btnImgLike.style.display = "inline";
-    setTimeout(getNewDog, 2000);
-    dog.setStatus(true);
+  if (!btnDisabled) {
+    btnDisabled = true;
+    if (option === "nope") {
+      btnImgNope.style.display = "inline";
+      dog.setStatus(false);
+      setTimeout(getNewDog, 2000);
+    } else if (option === "like") {
+      btnImgLike.style.display = "inline";
+      setTimeout(getNewDog, 2000);
+      dog.setStatus(true);
+    }
   }
-
-  /*  document.getElementsByClassName("button").type.button = "disabled"; */
 }
 
 function getNewDog() {
+  btnDisabled = false;
   if (counting >= 2) {
     counting = 0;
   } else {
