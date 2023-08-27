@@ -7,8 +7,8 @@ body {
   margin: 0; 
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  max-width: 200px;
 }
+
 
 /* Header */
 
@@ -23,6 +23,7 @@ body {
   height: 75px;
 }
 
+
 /* Container */
 .container{
   width: 1068px; 
@@ -30,7 +31,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
+.avatar-img {
+  object-fit: contain;
 }
 
 .header-logo, 
@@ -112,7 +116,6 @@ h3 {
 
 .nope-size,
 .like-size {
-
   padding: 56px;
   border-radius: 100%;
   margin-left: 15px;

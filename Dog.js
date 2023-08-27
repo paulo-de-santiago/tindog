@@ -18,8 +18,7 @@ image.src = "image1.jpg" */
     const { name, avatar, age, bio } = this;
 
     return `<div class="outsider-div" id="outsider-div">
-              <img src="${avatar}" alt="" />
-
+              <img src="${avatar}" alt=""/>
                 <div class="dog-info-general">
                     <div class="badge" id="badge">
                       <img src="./images/badge-nope.png" alt="" class="badge-nope-img" id="badge-nope-img"/> 
