@@ -17,7 +17,9 @@ image.src = "image1.jpg" */
     // @ts-ignore
     const { name, avatar, age, bio } = this;
 
-    return ` <img src="${avatar}" alt=""/>
+    return `<div class="img-div" id="img-div">
+                <img src="${avatar}" alt="${name} ${bio}"/>
+                </div>
                 <div class="dog-info-general">
                     <div class="badge" id="badge">
                       <img src="./images/badge-nope.png" alt="" class="badge-nope-img" id="badge-nope-img"/> 
@@ -27,8 +29,7 @@ image.src = "image1.jpg" */
                       <h3>${name}, ${age}</h3>
                       <p>${bio}</p>
                     </div>
-                </div>
-            `;
+                </div>`;
   }
 }
 

@@ -33,10 +33,9 @@ body {
   justify-content: center;
 }
 
-.avatar-img {
-  object-fit: contain;
-}
-
+/* .img-div {
+width: 48%;
+} */
 .header-logo, 
 .footer-icons {
   display: flex;
